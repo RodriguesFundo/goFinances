@@ -1,11 +1,24 @@
 import React from 'react'
-import { Container, Title } from './styles'
+import { Feather} from '@expo/vector-icons';
+
+import { Container, Header, UserWrapper, UserInfo, Photo, User, UserGrettings, UserName } from './styles'
 
 
 export  function Dashboard() {
   return ( 
     <Container>
-        <Title>Dashboard</Title>
+      <Header>
+        <UserWrapper>
+          <UserInfo>
+            <Photo />
+            <User>
+              <UserGrettings>Olá, </UserGrettings>
+              <UserName>Rodrigues</UserName>
+            </User>
+            <Feather name='power'/>
+          </UserInfo>
+        </UserWrapper>
+      </Header>
     </Container>
   )
 }
