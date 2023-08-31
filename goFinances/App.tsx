@@ -1,11 +1,35 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { ThemeProvider } from 'styled-components';
+import AppLoading from 'expo-app-loading';
+
+import {
+  useFonts,
+  Poppins_400Regular,
+  Poppins_500Medium,
+  Poppins_700Bold
+} from '@expo-google-fonts/poppins';
+
+import theme from './src/global/styles/theme';
 import { Dashboard } from './src/screens/Dashboard'
 
 export default function App() {
+  // Constante para garantir que a fonte esteja disponivel no dispositivo, ele vai segurar ate que as fontes sejam carregadas
+  const [fontLoaded] = useFonts({
+    Poppins_400Regular,
+    Poppins_500Medium,
+    Poppins_700Bold
+  });
 
-  return <Dashboard/>
+  if( !fontLoaded){
+    return <AppLoading/>
+  }
+
+
+  return (
+    <ThemeProvider theme={theme}>
+      <Dashboard/>
+    </ThemeProvider>
+  )
 
 }
 
