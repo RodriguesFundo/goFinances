@@ -7,7 +7,7 @@ export function HighlightCard() {
   return (
     <Container>
         <Header>
-            <Title>ENtrada</Title>
+            <Title>Entrada</Title>
             <Icon name='arrow-up-circle'/>
         </Header>
 

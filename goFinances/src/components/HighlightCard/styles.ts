@@ -13,20 +13,28 @@ export const Container = styled.View`
 `;
 
 export const Header = styled.View`
-
+    flex-direction: row;
+    justify-content: space-between;
 `; 
 export const Title = styled.Text`
-
+    font-family: ${theme.fonts.regular};
+    font-size: ${RFValue(14)};
+    color: ${theme.colors.text_dark};
 `; 
 export const Icon = styled(Feather)`
-
+    font-size: ${RFValue(40)};
 `; 
 export const Footer = styled.View`
 
 `; 
 export const Amount = styled.Text`
-
+    font-family: ${theme.fonts.medium};
+    font-size: ${RFValue(32)};
+    color: ${theme.colors.text_dark};
+    margin-top: 38px;
 `; 
 export const LastTransaction = styled.Text`
-
+    font-family: ${theme.fonts.regular};
+    font-size: ${RFValue(12)};
+    color: ${theme.colors.text};
 `;
