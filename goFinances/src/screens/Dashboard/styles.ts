@@ -11,17 +11,20 @@ export const Container = styled.View`
     
 `;
 
-export const Header = styled.View`
+export const Header = styled.SafeAreaView`
     width: 100%;
     background-color: ${theme.colors.primary};
     height: ${RFPercentage(42)};
-
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 
 `;
 
 export const UserWrapper = styled.View`
     width: 100%;
     padding: 0 24px;
+    margin-top: ${RFValue(28)};
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

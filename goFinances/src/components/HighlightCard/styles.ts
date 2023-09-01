@@ -5,13 +5,12 @@ import theme from "../../global/styles/theme";
 
 
 export const Container = styled.View`
-    background-color: ${theme.colors.secondary};
+    background-color: ${theme.colors.shape};
     width: ${RFValue(300)};
     border-radius: 5px;
     padding: 19px 23px;
     padding-bottom: ${RFValue(42)};
     margin-right: 16px;
-    height: 300px;
 
 `;
 
