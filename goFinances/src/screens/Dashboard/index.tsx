@@ -1,8 +1,7 @@
 import React from 'react'
-import { Feather} from '@expo/vector-icons';
 import { View } from 'react-native';
 
-import { Container, Header, UserWrapper, UserInfo, Photo, User, UserGrettings, UserName } from './styles'
+import { Container, Header, UserWrapper, UserInfo, Photo, User, UserGrettings, UserName, Icon } from './styles'
 
 
 export  function Dashboard() {
@@ -16,8 +15,8 @@ export  function Dashboard() {
               <UserGrettings>Olá, </UserGrettings>
               <UserName>Rodrigues</UserName>
             </User>
-            <Feather name='power' /> 
           </UserInfo>
+          <Icon name='power' /> 
         </UserWrapper>
       </Header>
     </Container>
