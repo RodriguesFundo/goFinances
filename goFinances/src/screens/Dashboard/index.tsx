@@ -30,9 +30,24 @@ export  function Dashboard() {
       <HighlightCards horizontal 
         showsHorizontalScrollIndicator={false}
       >
-        <HighlightCard/>
-        <HighlightCard/>
-        <HighlightCard/>
+        <HighlightCard 
+          type='up'
+          title='Entradas'
+          amount='R$ 17.400,00'
+          lastTransaction='Ultima entrada dia 13 de Abril'
+        />
+        <HighlightCard 
+          type='down'
+          title='Saidas'
+          amount='R$ 17.400,00'
+          lastTransaction='Ultima entrada dia 13 de Abril'
+        />
+        <HighlightCard 
+          type='total'
+          title='Total'
+          amount='R$ 17.400,00'
+          lastTransaction='Ultima entrada dia 13 de Abril'
+        />
       </HighlightCards>
       
       

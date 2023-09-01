@@ -1,18 +1,31 @@
 import React from 'react'
 import { Container, Header, Title, Icon, Footer, Amount, LastTransaction } from './styles'
 
+interface Props {
+  type: 'up'| 'down'| 'total';
+  title: string;
+  amount: string;
+  lastTransaction: string;
 
-export function HighlightCard() {
+}
+
+const icon = {
+  up: 'arrow-up-circle',
+  down: 'arrow-down-circle',
+  total: 'dollar-sign'
+}
+
+export function HighlightCard({type, title, amount, lastTransaction}: Props) {
   return (
     <Container>
         <Header>
-            <Title>Entrada</Title>
-            <Icon name='arrow-up-circle'/>
+            <Title>{title}</Title>
+            <Icon name={icon[type]}/>
         </Header>
 
         <Footer>
-            <Amount>R$ 17.400,00</Amount>
-            <LastTransaction>Ultima entrada dia 13 de Abril</LastTransaction>
+            <Amount>{amount}</Amount>
+            <LastTransaction>{lastTransaction}</LastTransaction>
         </Footer>
 
     </Container>

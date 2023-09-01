@@ -14,7 +14,7 @@ export const Container = styled.View`
 export const Header = styled.SafeAreaView`
     width: 100%;
     background-color: ${theme.colors.primary};
-    height: ${RFPercentage(42)};
+    height: ${RFPercentage(42)}px;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
@@ -24,7 +24,7 @@ export const Header = styled.SafeAreaView`
 export const UserWrapper = styled.View`
     width: 100%;
     padding: 0 24px;
-    margin-top: ${RFValue(28)};
+    margin-top: ${RFValue(28)}px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -47,20 +47,20 @@ export const User = styled.View`
 
 export const UserGrettings = styled.Text`
     color: ${theme.colors.shape};
-    font-size: ${RFValue(18)};
+    font-size: ${RFValue(18)}px;
     font-family: ${theme.fonts.regular};
 `;
 
 export const UserName = styled.Text`
     color: ${theme.colors.shape};
-    font-size: ${RFValue(18)};
+    font-size: ${RFValue(18)}px;
 
     font-family: ${theme.fonts.bold};
 `;
 
 export const Icon = styled(Feather)`
     color: ${theme.colors.secondary};
-    font-size: ${RFValue(24)};
+    font-size: ${RFValue(24)}px;
     
 `;
 
