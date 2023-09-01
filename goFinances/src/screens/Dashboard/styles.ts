@@ -45,18 +45,22 @@ export const User = styled.View`
 export const UserGrettings = styled.Text`
     color: ${theme.colors.shape};
     font-size: ${RFValue(18)};
-    font-family: ${theme.fonts.regular}
+    font-family: ${theme.fonts.regular};
 `;
 
 export const UserName = styled.Text`
     color: ${theme.colors.shape};
     font-size: ${RFValue(18)};
 
-    font-family: ${theme.fonts.bold}
+    font-family: ${theme.fonts.bold};
 `;
 
 export const Icon = styled(Feather)`
     color: ${theme.colors.secondary};
     font-size: ${RFValue(24)};
     
+`;
+
+export const HighlightCards = styled.ScrollView`
+    padding: 0 24px;
 `;
