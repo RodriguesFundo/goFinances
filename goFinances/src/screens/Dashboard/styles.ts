@@ -66,4 +66,7 @@ export const Icon = styled(Feather)`
 
 export const HighlightCards = styled.ScrollView`
     padding: 0 24px;
+    width: 100%;
+    position: absolute;
+    margin-top: ${RFPercentage(20)}px;
 `;
