@@ -33,6 +33,7 @@ export const UserWrapper = styled.View`
 export const UserInfo = styled.View`
     flex-direction: row;
     align-items: center;
+    //Alterar aqui
 `;
 
 export const Photo = styled.Image`
